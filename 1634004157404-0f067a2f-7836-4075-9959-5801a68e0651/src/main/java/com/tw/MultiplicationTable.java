@@ -6,15 +6,15 @@ public class MultiplicationTable {
     }
 
     public Boolean isValid(int start, int end) {
-        return null;
+        return isInRange(start) && isInRange(end) && isStartNotBiggerThanEnd(start, end);
     }
 
     public Boolean isInRange(int number) {
-        return null;
+        return number >= 1 && number <= 1000;
     }
 
     public Boolean isStartNotBiggerThanEnd(int start, int end) {
-        return null;
+        return start <= end;
     }
 
     public String generateTable(int start, int end) {
